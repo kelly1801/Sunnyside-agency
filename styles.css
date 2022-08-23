@@ -22,6 +22,7 @@
   --light-gary: hsl(210, 4%, 67%);
   --White: hsl(0, 0%, 100%);
   --blue: #3ebfff;
+  --light-green: #90d4c5;
 }
 
 nav{
@@ -150,3 +151,99 @@ width: calc(100% / 2);
             font-size: 1rem;
             color: var(--photography-color);
         }
+
+        .testimonial-title{
+            
+          font-family: 'Fraunces';
+          text-transform: uppercase;
+          letter-spacing: 10px;
+          color: var(--gray);
+          font-size: 20px;
+            margin-bottom: 3rem;
+           
+        }
+        .testimonial-section{
+            padding-top: 5rem;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .customer-container{
+            padding: 0 3rem;
+            
+            display: flex;
+        }
+        .testimonial-container{
+margin: 1rem;
+
+        }
+        .testimonial-img{
+            width: 4.5rem;
+            margin: 2rem;
+            border-radius: 50%;
+        }
+        .testimonial__para{
+            
+            padding: 2rem;
+            line-height: 1.5;
+            font-family: 'Barlow', sans-serif;
+            font-size: 1.1rem;
+            color: var(--gray);
+        }
+        .customer-name{
+            padding: 1rem;
+            font-family: 'Fraunces', sans-serif;
+            font-weight: 900;
+        }
+        .customer-job{
+            padding-bottom: 2rem;
+            font-family: 'Barlow', sans-serif;
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        /*GALLERY SECTION*/
+
+        
+        .gallery__section{
+            display: flex;
+        }
+        .gallery-pic{
+            width: calc(100% / 4);
+            
+        }
+        .gallery-img{
+            width: 100%;
+        }
+         /*GALLERY SECTION*/
+
+         /*FOOTER STARTS */
+
+         footer{
+            background-color: var(--light-green);
+            margin-top: 0;
+            color: var(--footer-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 0;
+            margin-top: -1rem;
+         }
+
+         .footer__list{
+            display: flex;
+         }
+         .footer--link{
+            margin: 3rem 1rem;
+         }
+
+         .icon{
+            margin: 10px;
+            margin-bottom: 1rem;
+         }
+
+          /*FOOTER ENDS */
