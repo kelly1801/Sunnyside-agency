@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <script src="https://kit.fontawesome.com/7453c59f9a.js" crossorigin="anonymous"></script>
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <script src="index.js" defer></script>
 <link rel="stylesheet" href="styles.css">
     <title>Frontend Mentor | Sunnyside agency landing page</title>
 
@@ -35,8 +36,32 @@
         <li class="nav--link">About</li>
         <li class="nav--link">Services</li>
         <li class="nav--link">Projects</li>
-        <li class="nav--link link--hover-effect">Contact</li>
+        <li class="nav--link link--hover-effect btn-contact"> Contact</li>
       </ul>
+
+
+      <button class="btn__menu" onclick="openMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="menu__backdrop">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="menu__links">
+          <li class="menu__list">
+            <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+          </li>
+          <li class="menu__list">
+            <a href="#features" class="menu__link" onclick="closeMenu()">Services</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__link no-cursor" onclick="closeMenu()">Projects</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__link no-cursor btn-contact" onclick="closeMenu()">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <header>
       <h1 class="header--title">We are creatives</h1>
@@ -102,7 +127,7 @@
 
 
             <picture class="graphic__picture">
-              <source media="(max-width:768px )" srcset="./images/mobile/image-graphic-design.jpg">
+              <source media="(min-width:768px)" srcset="image-graphic-mobile.jpg">
           <img src="./images/desktop/image-graphic-design.jpg" alt="">
         
         
@@ -122,7 +147,7 @@
             <div class="box__photo">
               
                 <picture class="graphic__picture">
-                      <source media="(max-width:768px)" srcset="./images/mobile/image-photography.jpg">
+                      <source media="(min-width:768px)" srcset="image-photography-mobile.jpg">
                   <img src="./images/desktop/image-photography.jpg" alt="">
                 
                 
@@ -204,9 +229,9 @@
               Incredible end result! Our sales increased over 400% when we
               worked with Sunnyside. Highly recommended!
             </p>
-
             <h3 class="customer-name">Jennie F.</h3>
             <h4 class="customer-job">Business Owner</h4>
+         
           </div>
         </div>
       </div>
@@ -216,7 +241,7 @@
         
          <picture class="gallery-pic">
 
-          <source media="(max-width:768px)" srcset="./images/mobile/image-gallery-milkbottles.jpg">
+          <source media="(max-width:168px)" srcset="./images/mobile/image-gallery-milkbottles.jpg">
           <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="" class="gallery-img"/> 
         </picture>
          
