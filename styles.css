@@ -89,8 +89,8 @@ header {
 .header--title {
   text-align: center;
   font-family: "Fraunces", sans-serif;
-  font-size: 4rem;
-  padding: 2rem;
+  font-size: 6rem;
+  padding-top: 5rem;
 }
 .arrow-header {
   position: absolute;
@@ -334,10 +334,7 @@ footer {
   top: 0;
   right: 0;
   transform: translateY(-60%);
-  
- 
-  
-  border-top: 1.5rem solid transparent;
+ border-top: 1.5rem solid transparent;
   border-left: 1.5rem solid transparent;
   border-right: 1rem solid white;
   border-bottom: 2rem solid #ffffff;
