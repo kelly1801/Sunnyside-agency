@@ -35,6 +35,20 @@ nav {
 body{
     overflow-x: hidden;
   }
+  .logo-img:hover{
+    
+    cursor: pointer;
+  }
+  .box-link:hover{
+
+    border-bottom: 8px solid var(--Yellow);
+    border-radius: 5px;
+  }
+
+  .link-stand:hover{
+    border-color: var(--Soft-red);
+  }
+
 
 
 .btn-contact {
@@ -43,6 +57,13 @@ body{
   color: var(--darkest);
   box-shadow: 2px 2px 2px var(--darkest);
   background-color: var(--White);
+}
+
+.btn-contact:hover{
+
+    background-color: var(--light-green);
+    opacity: 0.8;
+    color: var(--White);
 }
 .nav__list {
   display: flex;
@@ -228,16 +249,32 @@ footer {
 }
 .footer--link {
   margin: 3rem 1rem;
+  font-family: 'Barlow', sans-serif;
+  cursor: pointer;
+}
+
+.footer--link:hover{
+    color: var(--White);
 }
 
 .icon {
   margin: 10px;
   margin-bottom: 1rem;
+  cursor: pointer;
+}
+.icon:hover{
+    filter:brightness(5);
+}
+
+.footer__logo{
+    
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
 }
 
 /*FOOTER ENDS */
 
-/*Menu collapse*/
+/*Menu collapse starts*/
 
 .btn__menu {
   background-color: transparent;
